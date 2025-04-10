@@ -10,6 +10,77 @@ namespace Prueba2
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Que figura quiere operar");
+            Console.WriteLine("1- Triangulo");
+            Console.WriteLine("2- Circulo");
+            Console.WriteLine("3- Rectangulo");
+
+            int select = int.Parse(Console.ReadLine());
+
+
+            switch (select)
+            {
+                case (1):
+                    Console.WriteLine("Que ancho le quiere dar");
+                    int b = int.Parse(Console.ReadLine());
+
+                    Console.WriteLine("Que alto le quiere dar");
+                    int h = int.Parse(Console.ReadLine());
+
+                    triangulo r = new triangulo(b, h);
+
+                    Console.WriteLine(r.Area());
+
+                    break; 
+                case (2):
+                    break;
+                case (3):
+                    break;
+                default:
+                    break;
+            }
+
+
+
+
+
+
+            /*
+                  bool repeat = true;
+
+              *while (repeat)
+              {
+                  Console.Clear();
+
+                      Console.WriteLine("ingresa un numero");
+                      int n1 = int.Parse(Console.ReadLine());
+
+                      Console.WriteLine("ingresa una operacion (+ , * , / , -)");
+                      string p = Console.ReadLine();
+
+                      Console.WriteLine("ingresa un numero");
+                      int n2 = int.Parse(Console.ReadLine());
+
+
+                      if ( p == "+" )
+                          Console.WriteLine(n1 + n2);
+                      else if (p == "-")
+                          Console.WriteLine(n1 - n2);
+                      else if (p == "*")
+                          Console.WriteLine(n1 * n2);
+                      else if (p == "/")
+                          Console.WriteLine(n1 / n2);
+                      else
+                          Console.WriteLine("error de operacion");
+
+                  Console.WriteLine("otra operacion?");
+
+                  if (Console.ReadLine() == "no") repeat = false;
+              }
+              */
+
+
+
         }
     }
 }
