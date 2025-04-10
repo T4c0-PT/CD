@@ -12,8 +12,8 @@ namespace Prueba2
         {
             Console.WriteLine("Que figura quiere operar");
             Console.WriteLine("1- Triangulo");
-            Console.WriteLine("2- Circulo");
-            Console.WriteLine("3- Rectangulo");
+            Console.WriteLine("2- Rectangulo");
+            Console.WriteLine("3- Circulo");
 
             int select = int.Parse(Console.ReadLine());
 
@@ -33,6 +33,16 @@ namespace Prueba2
 
                     break; 
                 case (2):
+                    Console.WriteLine("Que ancho le quiere dar");
+                    int l1 = int.Parse(Console.ReadLine());
+
+                    Console.WriteLine("Que alto le quiere dar");
+                    int l2 = int.Parse(Console.ReadLine());
+
+                    Cuadrado res = new Cuadrado(l1, l2);
+
+                    Console.WriteLine(res.Area());
+
                     break;
                 case (3):
                     break;
